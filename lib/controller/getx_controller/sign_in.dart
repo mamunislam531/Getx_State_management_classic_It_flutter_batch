@@ -16,7 +16,7 @@ class SignInController extends GetxController{
 
   signInFun()async{
     isLoading.value = true;
-    bool status = await SignInService.signIn();
+    bool status = await SignInService.signIn(mail: mailController.text, password: passwordController.text);
     isLoading.value = false;
 
     if(status){
@@ -24,8 +24,13 @@ class SignInController extends GetxController{
       Get.to(()=> const Home());
       return;
     }
+  }
 
-
+  @override
+  void dispose() {
+    mailController.dispose();
+    passwordController.dispose();
+    super.dispose();
   }
 
 }
