@@ -42,7 +42,6 @@ class SignIn extends StatelessWidget {
                         log("==========222222222222===============");
                         signInController.signInFun();
                       }) : const CommonLoadingButton()),
-
                   //
                 ],
               ),

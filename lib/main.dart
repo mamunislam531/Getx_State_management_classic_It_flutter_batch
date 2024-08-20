@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:getx_state_management/view/screen/home/home.dart';
 
 
-
 void main(){
   runApp(const MyApp());
 }
