@@ -1,12 +1,12 @@
 import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_state_management/controller/getx_controller/sign_in.dart';
 import 'package:getx_state_management/view/common_widgets/common_button.dart';
 import 'package:getx_state_management/view/common_widgets/common_loading_button.dart';
-import 'package:getx_state_management/view/screen/auth/sign_in/widget/email_text_field.dart';
-import 'package:getx_state_management/view/screen/auth/sign_in/widget/password_text_field.dart';
+import 'package:getx_state_management/view/screen/auth/widget/email_text_field.dart';
+import 'package:getx_state_management/view/screen/auth/widget/password_text_field.dart';
+
 
 class SignIn extends StatelessWidget {
   const SignIn({super.key});

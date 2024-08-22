@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:getx_state_management/controller/getx_controller/home.dart';
 import 'package:getx_state_management/model/product_list_model.dart';
 import 'package:getx_state_management/view/common_widgets/common_text.dart';
+import 'package:getx_state_management/view/common_widgets/search_field.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -25,17 +26,17 @@ class Home extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
-            // SearchField(
-            //   // searchController: controller.searchController,
-            //   // onTap: () {
-            //   //   log("===== onTap ==================");
-            //   //   controller.searchFunction(searchText: controller.searchController.text);
-            //   // },
-            //   onChanged: (String text ) {
-            //     log("===== onChanged : $text ==================");
-            //     controller.searchFunction(searchText: text);
-            //   },
-            // ),
+            SearchField(
+              // searchController: controller.searchController,
+              // onTap: () {
+              //   log("===== onTap ==================");
+              //   controller.searchFunction(searchText: controller.searchController.text);
+              // },
+              onChanged: (String text ) {
+                log("===== onChanged : $text ==================");
+                controller.searchFunction(searchText: text);
+              },
+            ),
             const SizedBox(height: 10),
             Obx(() => controller.isLoading.isTrue
                 ? const Center(child: CircularProgressIndicator())

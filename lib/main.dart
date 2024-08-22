@@ -1,7 +1,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_state_management/view/screen/home/home.dart';
+import 'package:getx_state_management/view/screen/auth/sign_in/sign_in.dart';
+import 'package:getx_state_management/view/screen/auth/sign_up/sign_up.dart';
+import 'package:getx_state_management/view/screen/dashboard/dashboard.dart';
 
 
 void main(){
@@ -14,8 +16,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      home: Home(),
+    return const GetMaterialApp(
+      home: Dashboard(),
     );
   }
 }
