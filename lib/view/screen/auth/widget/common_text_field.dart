@@ -8,6 +8,7 @@ class CommonTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       controller: textController,
+
       decoration: InputDecoration(
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(8)),
           focusedBorder:
